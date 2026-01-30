@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Self-Supervised Learning for Tactile Classification | Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Sora:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">Jonas Fischer</div>
+        <nav>
+          <a href="../index.html">CV</a>
+          <a class="active" href="../projects.html">Academic Projects</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div>
+          <h1>Self-Supervised Learning for Tactile Classification</h1>
+          <p>
+            Tactile sensing is essential for robust material classification, yet
+            supervised approaches require costly labeled data. This project
+            explores self-supervised learning with a shared TacNet-II encoder,
+            comparing autoencoders, MAE, and CNN-JEPA, and shows improved
+            accuracy and sample efficiency on downstream tactile classification.
+          </p>
+          <div class="tags">
+            <span class="tag">Self-Supervised</span>
+            <span class="tag">Tactile Sensing</span>
+            <span class="tag">Deep Learning</span>
+          </div>
+        </div>
+        <div>
+          <img
+            class="card project-hero-image"
+            src="../assets/Projects/ADL4Robotics/tactile-jepa.png"
+            alt="Tactile JEPA visualization"
+          />
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Links</h2>
+        <div class="project-links">
+          <a href="../assets/Projects/ADL4Robotics/ADLR_Pretraining_for_Tactile_classification (3).pdf">
+            Project Report
+          </a>
+          <a
+            href="https://github.com/JonasEtFi/SSL-for-Tactile-Classification"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Code Repository
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Overview</h2>
+        <div class="card">
+          <p>
+            Efficient tactile sensing is critical for robots that must grasp,
+            manipulate, and identify materials in real-world environments.
+            Modern supervised models such as TacNet-II achieve high accuracy,
+            but rely on large labeled datasets that are expensive to collect.
+          </p>
+          <p>
+            To reduce this dependency, the work investigates self-supervised
+            pretraining for tactile time-series data, adapting CNN-JEPA and
+            comparing it with MAE and classic autoencoders. The study analyzes
+            how different pretraining and downstream splits affect performance
+            and shows where predictive representation learning provides the
+            most benefit.
+          </p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div><a href="../projects.html">Back to all projects</a></div>
+      </footer>
+    </div>
+  </body>
+</html>

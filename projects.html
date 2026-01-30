@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jonas Fischer | Academic Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Sora:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">Jonas Fischer</div>
+        <nav>
+          <a href="index.html">CV</a>
+          <a class="active" href="projects.html">Academic Projects</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div>
+          <h1>Academic Projects</h1>
+          <p>
+            Selected academic Projects
+          </p>
+          <div class="tags">
+            <span class="tag">Self-Supervised Learning</span>
+            <span class="tag">Reinforcement Learning</span>
+            <span class="tag">Robot Manipulation</span>
+            <span class="tag">Deep Learning</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="list">
+          <a class="list-item" href="projects/tactile-ssl.html">
+            <div class="project-card">
+              <img
+                src="assets/Projects/ADL4Robotics/tactile-jepa.png"
+                alt="Tactile JEPA"
+              />
+              <div class="meta">
+                <h3>Self-Supervised Learning for Tactile Classification</h3>
+                <p>
+                  Explores self-supervised learning for tactile sensing with a
+                  shared TacNet-II encoder and time-based masking, improving
+                  accuracy for material classification.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a class="list-item" href="projects/rl-smart-grids.html">
+            <div class="project-card">
+              <img
+                src="assets/Projects/MORL/Pareto-front-vis.png"
+                alt="Pareto front visualization"
+              />
+              <div class="meta">
+                <h3>A Multi-objective Approach to Safe Reinforcement Learning for Smart Grids</h3>
+                <p>
+                  Frames smart grid control as multi-objective RL with separate
+                  cost and safety objectives, learning Pareto-optimal trade-offs.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a class="list-item" href="projects/bachelor-thesis.html">
+            <div class="project-card">
+              <img
+                src="assets/Projects/Bachelor_thesis/failEDS (1).png"
+                alt="Gaussian mixture model visualization"
+              />
+              <div class="meta">
+                <h3>Parameterized and Dynamic Gaussian Mixture Models for Robot Manipulation</h3>
+                <p>
+                  Compares task-parameterized GMMs and elastic dynamical systems
+                  for adapting robot motions from demonstrations to new task
+                  parameters.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div>More projects can be added anytime.</div>
+      </footer>
+    </div>
+  </body>
+</html>

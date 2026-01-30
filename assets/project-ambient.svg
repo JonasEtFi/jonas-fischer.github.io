@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260" viewBox="0 0 400 260">
+  <rect width="400" height="260" rx="24" fill="#f3e6d2" />
+  <circle cx="90" cy="100" r="52" fill="#d9b79a" />
+  <rect x="160" y="70" width="170" height="24" rx="12" fill="#c98b63" />
+  <rect x="160" y="110" width="120" height="18" rx="9" fill="#b7653b" />
+  <rect x="160" y="142" width="150" height="14" rx="7" fill="#a45b3a" />
+  <text x="30" y="220" font-family="Space Grotesk, Arial, sans-serif" font-size="18" fill="#6a4b36">Ambient Sensing</text>
+</svg>

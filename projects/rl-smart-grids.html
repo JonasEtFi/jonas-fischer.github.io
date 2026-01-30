@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Multi-objective Approach to Safe Reinforcement Learning for Smart Grids | Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Sora:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">Jonas Fischer</div>
+        <nav>
+          <a href="../index.html">CV</a>
+          <a class="active" href="../projects.html">Academic Projects</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div>
+          <h1>A Multi-objective Approach to Safe Reinforcement Learning for Smart Grids</h1>
+          <p>
+            Building energy management commonly uses RL controllers, but safety
+            constraints are often treated as a single penalty. This work casts
+            the problem as multi-objective RL with vector-valued rewards and
+            evaluates MORL algorithms on a smart household scenario, showing
+            improved Pareto trade-offs between cost and safety.
+          </p>
+          <div class="tags">
+            <span class="tag">Reinforcement Learning</span>
+            <span class="tag">Smart Grids</span>
+            <span class="tag">Optimization</span>
+          </div>
+        </div>
+        <div>
+          <img
+            class="card project-hero-image"
+            src="../assets/Projects/MORL/Pareto-front-vis.png"
+            alt="Pareto front visualization"
+          />
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Links</h2>
+        <div class="project-links">
+          <a href="../assets/Projects/MORL/MORL_Report.pdf">Project Report</a>
+          <a
+            href="https://github.com/JonasEtFi/fork-commonpower-MORL/pull/1"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Code Repository
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Overview</h2>
+        <div class="card">
+          <p>
+            Renewable-heavy grids need energy management strategies that can
+            cope with uncertainty in weather and price forecasts. Model
+            Predictive Control can be optimal with perfect forecasts, but its
+            performance drops in practice. RL controllers have shown cost
+            advantages, yet struggle to satisfy hard safety constraints such as
+            battery charge bounds.
+          </p>
+          <p>
+            Traditional approaches add safety violations as a penalty term, but
+            this fixes the trade-off in advance and makes retuning expensive.
+            This project frames the task as true multi-objective RL, separating
+            cost and safety objectives and enabling flexible selection of
+            operating points without retraining.
+          </p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div><a href="../projects.html">Back to all projects</a></div>
+      </footer>
+    </div>
+  </body>
+</html>

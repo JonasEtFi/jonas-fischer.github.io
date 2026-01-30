@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260" viewBox="0 0 400 260">
+  <rect width="400" height="260" rx="24" fill="#f5efe9" />
+  <rect x="50" y="50" width="140" height="140" rx="20" fill="#e2cdb8" />
+  <rect x="210" y="70" width="120" height="20" rx="10" fill="#c98b63" />
+  <rect x="210" y="105" width="150" height="16" rx="8" fill="#b0714a" />
+  <rect x="210" y="135" width="90" height="12" rx="6" fill="#9c5c3f" />
+  <circle cx="120" cy="120" r="32" fill="#c98b63" />
+  <text x="30" y="220" font-family="Space Grotesk, Arial, sans-serif" font-size="18" fill="#6a4b36">Assistive Toolkit</text>
+</svg>

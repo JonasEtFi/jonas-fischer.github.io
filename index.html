@@ -77,7 +77,7 @@
             <div class="item-row">
               <img class="logo-icon" src="assets/logos/BMW.png" alt="BMW logo" />
               <div>
-                <strong>Working Student — Machine Learning for Mainframe Migration</strong>
+                <strong>Working Student — GenAI for Mainframe Migration</strong>
                 <span>BMW · Jan 2026 – Present · Munich, Germany</span>
               </div>
             </div>
@@ -145,6 +145,45 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Favourite Project</h2>
+        <div class="list">
+          <a class="list-item" href="projects/lvsm-vae.html">
+            <div class="project-card">
+              <video
+                src="assets/projects/ADLCV/demo.mp4"
+                poster="assets/projects/ADLCV/a747b3262d507a68.png"
+                autoplay
+                muted
+                playsinline
+                data-max-loops="2"
+              >
+                LVSM-VAE preview
+              </video>
+              <div class="meta">
+                <h3>LVSM-VAE: Transformer-Based Novel View Synthesis in Latent Space</h3>
+                <p>
+                  Adapts LVSM to operate in a VAE latent space so we can process
+                  longer camera sequences with less memory while keeping photoreal
+                  novel views. The transformer works on patchified latent tokens
+                  conditioned with scaled camera embeddings, then decodes the
+                  prediction back to RGB.
+                </p>
+                <div class="tags project-card-tags">
+                  <span class="tag">Novel View Synthesis</span>
+                  <span class="tag">Transformers</span>
+                  <span class="tag">VAE</span>
+                  <span class="tag">Computer Vision</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="section-footer section-footer-link">
+          <a href="projects.html">More projects →</a>
         </div>
       </section>
 
@@ -218,5 +257,23 @@
         <div>Munich · Last updated January 2026</div>
       </footer>
     </div>
+    <script>
+      ;(function () {
+        document.querySelectorAll('video[data-max-loops]').forEach((video) => {
+          const maxLoops = Number(video.dataset.maxLoops) || 1;
+          let endedCount = 0;
+          const handleEnded = () => {
+            endedCount += 1;
+            if (endedCount < maxLoops) {
+              video.currentTime = 0;
+              video.play();
+            } else {
+              video.removeEventListener('ended', handleEnded);
+            }
+          };
+          video.addEventListener('ended', handleEnded);
+        });
+      })();
+    </script>
   </body>
 </html>

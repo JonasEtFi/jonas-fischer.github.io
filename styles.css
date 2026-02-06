@@ -113,6 +113,27 @@ nav a:hover {
   margin-bottom: 12px;
 }
 
+.section-footer {
+  margin-top: 16px;
+}
+
+.section-footer-link {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.section-footer-link a {
+  color: var(--accent);
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: border-color 0.2s;
+}
+
+.section-footer-link a:hover {
+  border-color: var(--accent);
+}
+
 .grid {
   display: grid;
   gap: 16px;
@@ -233,6 +254,10 @@ nav a:hover {
 .project-card .meta {
   display: grid;
   gap: 6px;
+}
+
+.project-card .project-card-tags {
+  margin: 6px 0 0;
 }
 
 .project-card .meta h3 {

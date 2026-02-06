@@ -39,6 +39,29 @@
 
       <section class="section">
         <div class="list">
+          <a class="list-item" href="projects/lvsm-vae.html">
+            <div class="project-card">
+              <video
+                src="assets/projects/ADLCV/demo.mp4"
+                poster="assets/projects/ADLCV/a747b3262d507a68.png"
+                autoplay
+                muted
+                playsinline
+                data-max-loops="2"
+              >
+                LVSM-VAE preview
+              </video>
+              <div class="meta">
+                <h3>LVSM-VAE: Transformer-Based Novel View Synthesis in Latent Space</h3>
+                <p>
+                  Trains LVSM in a VAE latent space to reduce inference cost
+                  while retaining novel-view quality and enabling longer context
+                  sequences under fixed compute budgets.
+                </p>
+              </div>
+            </div>
+          </a>
+
           <a class="list-item" href="projects/tactile-ssl.html">
             <div class="project-card">
               <img
@@ -95,5 +118,23 @@
         <div>More projects can be added anytime.</div>
       </footer>
     </div>
+    <script>
+      ;(function () {
+        document.querySelectorAll('video[data-max-loops]').forEach((video) => {
+          const maxLoops = Number(video.dataset.maxLoops) || 1;
+          let endedCount = 0;
+          const handleEnded = () => {
+            endedCount += 1;
+            if (endedCount < maxLoops) {
+              video.currentTime = 0;
+              video.play();
+            } else {
+              video.removeEventListener('ended', handleEnded);
+            }
+          };
+          video.addEventListener('ended', handleEnded);
+        });
+      })();
+    </script>
   </body>
 </html>

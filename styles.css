@@ -213,7 +213,8 @@ nav a:hover {
   align-items: center;
 }
 
-.project-card img {
+.project-card img,
+.project-card video {
   width: 100%;
   height: 140px;
   object-fit: contain;
@@ -278,7 +279,8 @@ nav a:hover {
     grid-template-columns: 1fr;
   }
 
-  .project-card img {
+  .project-card img,
+  .project-card video {
     height: 160px;
   }
 

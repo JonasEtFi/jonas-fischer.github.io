@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LVSM-VAE: Transformer-Based Novel View Synthesis in Latent Space | Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Sora:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">Jonas Fischer</div>
+        <nav>
+          <a href="../index.html">CV</a>
+          <a class="active" href="../projects.html">Academic Projects</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div>
+          <h1>LVSM-VAE: Transformer-Based Novel View Synthesis in Latent Space</h1>
+          <p>
+            This project adapts the Large View Synthesis Model (LVSM) to operate
+            inside a VAE latent space, reducing inference cost while preserving
+            novel view quality and enabling longer context sequences at a fixed
+            compute budget.
+          </p>
+          <div class="tags">
+            <span class="tag">Novel View Synthesis</span>
+            <span class="tag">Transformers</span>
+            <span class="tag">Latent Space</span>
+            <span class="tag">Computer Vision</span>
+          </div>
+        </div>
+        <div>
+          <video
+            class="card project-hero-image"
+            src="../assets/projects/ADLCV/demo.mp4"
+            poster="../assets/projects/ADLCV/a747b3262d507a68.png"
+            autoplay
+            muted
+            playsinline
+            controls
+            data-max-loops="2"
+          >
+            Your browser does not support embedded video.
+          </video>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Links</h2>
+        <div class="project-links">
+          <a href="../assets/projects/ADLCV/LVSM_VAE_Report.pdf">Project Report</a>
+          <a
+            href="https://github.com/flaarmann1000/LVSM-VAE"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Code Repository
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Overview</h2>
+        <div class="card">
+          <p>
+            LVSM-VAE encodes reference images into a compressed latent space and
+            feeds patchified latent tokens plus ray-based camera embeddings into
+            a decoder-only transformer. By adjusting intrinsics for the latent
+            resolution, the model preserves geometric consistency while
+            predicting novel views directly in latent space before decoding
+            back to RGB.
+          </p>
+          <p>
+            Experiments on RealEstate10k show competitive PSNR and SSIM relative
+            to pixel-space LVSM baselines, with substantially lower inference
+            memory and runtime. Scaling the number of reference views improves
+            quality, and fine-tuning with larger context sizes yields the best
+            trade-offs under comparable compute constraints.
+          </p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div><a href="../projects.html">Back to all projects</a></div>
+      </footer>
+    </div>
+    <script>
+      ;(function () {
+        document.querySelectorAll('video[data-max-loops]').forEach((video) => {
+          const maxLoops = Number(video.dataset.maxLoops) || 1;
+          let endedCount = 0;
+          const handleEnded = () => {
+            endedCount += 1;
+            if (endedCount < maxLoops) {
+              video.currentTime = 0;
+              video.play();
+            } else {
+              video.removeEventListener('ended', handleEnded);
+            }
+          };
+          video.addEventListener('ended', handleEnded);
+        });
+      })();
+    </script>
+  </body>
+</html>

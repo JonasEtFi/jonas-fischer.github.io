@@ -2,6 +2,8 @@
 
 This is a simple static site with a CV page and academic projects.
 
+[https://jonasetfi.github.io/jonas-fischer.github.io/index.html](https://jonasetfi.github.io/jonas-fischer.github.io/index.html)
+
 ## Publish with GitHub Pages
 
 1) Create a new GitHub repository (or use an existing one).
